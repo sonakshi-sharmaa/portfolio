@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonakshi Sharma | Video Editor, Reels Creator & Social Media Influencer</title>
+  <meta name="description" content="Portfolio of Sonakshi Sharma, a video editor and reels creator with 2+ years of experience. 3D visuals, smooth transitions and social-first edits.">
+  <meta name="theme-color" content="#0a0a0b">
+
+  <!-- REPLACE: after publishing, change YOUR-USERNAME and YOUR-REPO to your GitHub details.
+       Open Graph images must use a full web address to show up when you share the link. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sonakshi Sharma | Video Editor & Reels Creator">
+  <meta property="og:description" content="I turn ideas into visual stories. 3D visuals, reels and cinematic edits.">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPO/assets/images/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon placeholder: swap favicon.svg for your own logo -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to content</a>
+  <div class="cursor" aria-hidden="true"><span class="cursor-dot"></span><span class="cursor-ring"></span></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" data-brand>Sonakshi Sharma</a>
+    <nav class="nav" aria-label="Main">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Menu</span><i></i><i></i></button>
+      <ul id="nav-links">
+        <li><a href="#work">3D Visuals</a></li>
+        <li><a href="#gallery">Work</a></li>
+        <li><a href="#reels">Reels</a></li>
+        <li><a href="#creator">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a class="pill pill-light" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-visual" data-parallax="0.12">
+        <div class="hero-glow"></div>
+        <!-- REPLACE: hero animation = assets/images/hero-frames/f001.webp ... f192.webp (played by script.js).
+             To use a single photo instead, set CONFIG.hero.frames = 0 in script.js and replace hero-poster.jpg. -->
+        <canvas id="hero-canvas" width="600" height="600" role="img" aria-label="Portrait of the creator turning toward the camera and smiling"></canvas>
+        <img class="hero-poster" id="hero-poster" src="assets/images/hero-poster.jpg" alt="" width="600" height="600" fetchpriority="high">
+        <button class="replay" id="hero-replay" type="button" hidden>Replay</button>
+      </div>
+
+      <div class="hero-copy">
+        <p class="badge"><span class="dot"></span>Available for Collaborations</p>
+        <h1 id="hero-title">I Turn Ideas Into Visual Stories.</h1>
+        <p class="hero-sub">Video Editor • Reels Creator • Social Media Influencer</p>
+        <p class="hero-text">Creating engaging visual experiences through cinematic edits, smooth transitions, creative storytelling, and social-first content.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">Explore My Work</a>
+          <a class="btn btn-ghost" href="#contact">Let's Collaborate</a>
+        </div>
+      </div>
+
+      <aside class="hero-side" aria-label="Quick facts">
+        <ul class="hero-services">
+          <li>3D Visuals</li>
+          <li>Reels</li>
+          <li>Transitions</li>
+          <li>Short-form edits</li>
+        </ul>
+        <p class="hero-years"><strong>2+ Years</strong> of Creative Experience</p>
+        <a class="hero-ig" href="https://www.instagram.com/soohyaps/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+          @soohyaps on Instagram
+        </a>
+      </aside>
+    </section>
+
+    <!-- ============ 3D SHOWCASE ============ -->
+    <section class="section" id="work" aria-labelledby="showcase-title">
+      <div class="section-head">
+        <h2 id="showcase-title">Beyond the Ordinary — 3D Visuals</h2>
+        <p class="lead">A look at my 3D video work, built for scroll-stopping first seconds.</p>
+      </div>
+
+      <figure class="player" id="player">
+        <div class="player-frame">
+          <!--
+            ============================================================
+            REPLACE YOUR 3D VIDEO HERE
+            1. Put your MP4 in:        assets/videos/3d-showreel.mp4
+            2. Put a cover image in:   assets/images/3d-thumbnail.jpg  (then change the poster path below and in script.js CONFIG.video)
+            Keep the file name exactly as written, or update CONFIG.video.src in script.js.
+            ============================================================
+          -->
+          <video id="showreel" preload="none" playsinline poster="assets/images/3d-thumbnail.svg">
+            <source id="showreel-src" src="assets/videos/3d-showreel.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <button class="play-btn" id="play-btn" type="button" aria-label="Play 3D showreel">
+            <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+          </button>
+          <button class="fs-btn" id="fs-btn" type="button" aria-label="Fullscreen">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <div class="player-notice" id="player-notice" hidden role="status">
+            <p><strong>Video not added yet.</strong></p>
+            <p>Place your MP4 at <code>assets/videos/3d-showreel.mp4</code> and it will play here.</p>
+          </div>
+        </div>
+        <figcaption class="player-meta">
+          <div>
+            <h3 id="video-title">3D Showreel</h3>
+            <p id="video-desc">Add a short description of this project here: what it is, the idea behind it, and what you wanted viewers to feel.</p>
+          </div>
+          <div>
+            <p class="meta-label">Tools used</p>
+            <ul class="chips" id="video-tools"></ul>
+          </div>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-head">
+        <h2 id="gallery-title">Selected Creative Work</h2>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects by category"></div>
+      </div>
+      <!-- Cards are built from CONFIG.projects in script.js -->
+      <div class="gallery" id="gallery-grid"></div>
+    </section>
+
+    <dialog class="modal" id="modal" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close project">&times;</button>
+      <img id="modal-img" src="" alt="">
+      <div class="modal-body">
+        <p class="meta-label" id="modal-cat"></p>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <ul class="chips" id="modal-tools"></ul>
+      </div>
+    </dialog>
+
+    <!-- ============ REELS ============ -->
+    <section class="section" id="reels" aria-labelledby="reels-title">
+      <div class="section-head">
+        <h2 id="reels-title">Reels That Make People Stop Scrolling</h2>
+      </div>
+      <!-- Cards are built from CONFIG.reels in script.js -->
+      <div class="reels" id="reels-grid"></div>
+    </section>
+
+    <!-- ============ CREATOR ============ -->
+    <section class="section creator" id="creator" aria-labelledby="creator-title">
+      <div class="creator-photo">
+        <!-- REPLACE: assets/images/profile.jpg is a still from your hero frames. Swap in any square photo. -->
+        <img src="assets/images/profile.jpg" alt="Profile portrait of the creator" loading="lazy" width="800" height="800">
+      </div>
+      <div class="creator-copy">
+        <h2 id="creator-title">The Creator Behind the Edits</h2>
+        <!-- REPLACE: write your own introduction -->
+        <p>I'm a video editor and social media creator with over two years of experience cutting reels, building 3D visuals and shaping short-form stories that hold attention from the first frame.</p>
+        <p>I edit for creators and brands who want content that feels intentional: clean pacing, smooth transitions, and a clear idea behind every cut.</p>
+        <ul class="chips chips-lg">
+          <li>Video editing</li>
+          <li>Reels creation</li>
+          <li>3D video content</li>
+          <li>Content creation</li>
+        </ul>
+        <div class="creator-actions">
+          <a class="btn btn-primary" href="https://www.instagram.com/soohyaps/" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+          <ul class="socials" id="socials" aria-label="Other profiles"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="section-head">
+        <h2 id="skills-title">Skills &amp; Expertise</h2>
+      </div>
+      <ul class="skills" id="skills-grid"></ul>
+    </section>
+
+    <!-- ============ METRICS ============ -->
+    <section class="section metrics-section" aria-labelledby="metrics-title">
+      <h2 class="sr-only" id="metrics-title">Experience and results</h2>
+      <dl class="metrics">
+        <div><dt>Creative Experience</dt><dd><span data-count="2" data-suffix="+">2+</span> <span class="unit">Years</span></dd></div>
+        <div><dt>Organic Reach on a Featured Reel</dt><dd><span data-count="27.5" data-decimals="1" data-suffix="K">27.5K</span><small>Reach of one reel, not total account reach or followers.</small></dd></div>
+        <div><dt>Featured Instagram Projects</dt><dd><span data-count="4">4</span> <span class="unit">Reels</span></dd></div>
+      </dl>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <h2 id="contact-title">Have a Story to Tell? Let's Create It.</h2>
+        <p class="lead">Looking for creative video editing, engaging reels, or a visual style that makes your content stand out? Let's work together.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.instagram.com/soohyaps/" target="_blank" rel="noopener noreferrer">Message on Instagram</a>
+          <!-- To change the email, edit CONFIG.email in script.js -->
+          <a class="btn btn-ghost" id="email-link" href="mailto:sonakshisharmaeditor@gmail.com">sonakshisharmaeditor@gmail.com</a>
+        </div>
+        <p class="note">Brands: send a short brief with your goal, timeline and platform. I reply to collaboration requests on Instagram and email.</p>
+      </div>
+
+      <!-- Works without a backend: it opens your visitor's email app with the message filled in. -->
+      <form class="form" id="contact-form">
+        <label>Your name<input name="name" type="text" autocomplete="name" required></label>
+        <label>Brand or channel<input name="brand" type="text" autocomplete="organization"></label>
+        <label>What do you need?<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Open in email app</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p class="footer-mark" aria-hidden="true" data-brand>Sonakshi Sharma</p>
+    <div class="footer-row">
+      <p><span data-brand>Sonakshi Sharma</span> &copy; <span id="year">2026</span>. Crafted with creativity.</p>
+      <nav aria-label="Footer">
+        <a href="#work">3D Visuals</a>
+        <a href="#gallery">Work</a>
+        <a href="#reels">Reels</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.instagram.com/soohyaps/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
