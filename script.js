@@ -27,7 +27,7 @@ const CONFIG = {
 
   // ---- 3D video section ----
   video: {
-    src: "assets/videos/3d-showreel.mp4",        // REPLACE: your MP4 (see README)
+    src: "3d-showreel.mp4",        // REPLACE: your MP4 (see README)
     poster: "assets/images/3d-thumbnail.svg",    // REPLACE: your thumbnail, e.g. assets/images/3d-thumbnail.jpg
     title: "3D Showreel",
     description: "Add a short description of this project here: what it is, the idea behind it, and what you wanted viewers to feel.",
